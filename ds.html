@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ds.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fEf21Ep_V4RgptHPew_c_4aaZd1mcDgc8cIvUqKL8ozCbZ5JLDjsU7Be2P8nmSvHjJA&usqp=CAU">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="https://www.amazon.com/">Home</a></li>
+                    <li><a href="https://www.amazon.com/s?k=smartphones&crid=7IXE1L2HAYAU&sprefix=smartphone%2Caps%2C357&ref=nb_sb_noss_1">Phone</a></li>
+                    <li><a href="https://www.amazon.com/s?k=phone+accessories&sprefix=phone+acc%2Caps%2C304&ref=nb_sb_ss_ts-doa-p_1_9">Accessories</a></li>
+                    <li><a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart">Cart</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="file:///C:/Users/Lenovo/OneDrive/Pictures/Screenshots/mobile.png" class="mobile">
+            <div id="circle">
+                <div class="feature One">
+                    <img src="file:///C:/Users/Lenovo/OneDrive/Pictures/Screenshots/camera.png">
+                    <div>
+                        <h1>Camera</h1>
+                        <p> 12 MP, Wide Angles Lens </p>
+                    </div>
+                </div>
+                <div class="feature Two">
+                    <img src="file:///C:/Users/Lenovo/OneDrive/Pictures/Screenshots/processor.png">
+                    <div>
+                        <h1> Processor </h1>
+                        <p> SnapDragon Octa-Core 11NM </p>
+                    </div>
+                </div>
+                <div class="feature Three">
+                    <img src="file:///C:/Users/Lenovo/OneDrive/Pictures/Screenshots/display.png">
+                    <div>
+                        <h1> Display </h1>
+                        <p> 6.5" Mini-Drop FullScreen </p>
+                    </div>
+                </div>
+                <div class="feature Four">
+                    <img src="file:///C:/Users/Lenovo/OneDrive/Pictures/Screenshots/battery.png">
+                    <div>
+                        <h1> Battery Life </h1>
+                        <p> 5000MAH, 720H Standby</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="file:///C:/Users/Lenovo/OneDrive/Pictures/Screenshots/arrow.png" id="UpBtn">
+            <h3> Features </h3>
+            <img src="file:///C:/Users/Lenovo/OneDrive/Pictures/Screenshots/arrow.png" id="DownBtn">
+
+        </div>
+
+    </div>
+
+
+    <script>
+        var circle = document.getElementById("circle");
+        var UpBtn = document.getElementById("UpBtn");
+        var DownBtn = document.getElementById("DownBtn");
+
+        var rotataValue = circle.style.transform;
+        var rotateSum;
+
+
+        UpBtn.onclick = function() {
+            rotateSum = rotataValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotataValue = rotateSum;
+        }
+
+
+        DownBtn.onclick = function() {
+            rotateSum = rotataValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotataValue = rotateSum;
+        }
+    </script>
+
+</body>
+
+</html>
